@@ -7,7 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "./css/App.css";
 import "./css/Navbar.css";
 import "./css/Footer.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route exact path="/portfolio/" element={<Home />} />
-          <Route exact path="/portfolio/about" element={<About />} />
-          <Route exact path="/portfolio/contact" element={<Contact />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
         <div className="blurBG">
           <span className="shape"></span>

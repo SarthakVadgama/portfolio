@@ -12,7 +12,11 @@ const MainCont = () => {
             </h2>
             <div
               className="container mt-5"
-              style={{ borderLeft: "white 2px solid", position: "relative" }}
+              style={{
+                borderLeft: "white 2px solid",
+                position: "relative",
+                zIndex: "4",
+              }}
             >
               {/* user interface */}
 
@@ -116,14 +120,14 @@ const MainCont = () => {
 
               <h5>
                 <a
-                  href="https://personal-blog-rust-two.vercel.app/"
+                  href="https://sarthakvadgama.github.io/portfolio/#/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Portfolio (Self) <i className="bi bi-link-45deg"></i>{" "}
                 </a>
                 <a
-                  href="https://github.com/SarthakVadgama/personal_blog"
+                  href="https://github.com/SarthakVadgama/portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -135,8 +139,8 @@ const MainCont = () => {
               </h5>
               <p className="fs-6 text-white-50">
                 This project is the current website developed to represent
-                myself in unique manner. This website is developed using NextJS
-                (a react framework).
+                myself in unique manner. This website is developed using
+                ReactJS.
               </p>
             </div>
           </div>
