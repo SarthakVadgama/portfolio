@@ -139,8 +139,25 @@ const MainCont = () => {
               </h5>
               <p className="fs-6 text-white-50">
                 This project is the current website developed to represent
-                myself in unique manner. This website is developed using
-                ReactJS.
+                myself in unique manner. This website was initially developed
+                using NextJS that later shifted to React due to some
+                restrictions.{" "}
+                <a
+                  href="https://github.com/SarthakVadgama/personal_blog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-link link-underline-primary"
+                >
+                  NextJS code here
+                </a>{" "}
+                <a
+                  href="https://personal-blog-rust-two.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-link link-underline-primary"
+                >
+                  NextJS Site version here
+                </a>
               </p>
             </div>
           </div>

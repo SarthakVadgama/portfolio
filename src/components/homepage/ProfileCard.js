@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../../css/ProfileCard.css";
-import { Tilt } from "react-tilt";
+import Pdf from "../../assets/Sarthaks_Resume.pdf";
+import VanillaTilt from "vanilla-tilt";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-const defaultOptions = {
-  max: 5,
-  scale: 1,
-  speed: 1000,
-};
+function Tilt(props) {
+  const { options, ...rest } = props;
+  const tilt = useRef(null);
+
+  useEffect(() => {
+    VanillaTilt.init(tilt.current, options);
+  }, [options]);
+
+  return <div ref={tilt} {...rest} />;
+}
 
 const ProfileCard = () => {
+  const defaultOptions = {
+    max: 6,
+    scale: 1,
+    speed: 1000,
+  };
+
   return (
     <>
       <div className="container mt-3 pt-5">
@@ -26,16 +40,20 @@ const ProfileCard = () => {
               <div className={`row nogutters`}>
                 <div className="col col-md-4">
                   <span className={`DPbg`}>
-                    <img
+                    <LazyLoadImage
                       src={require("../../assets/Dp (2).jpg")}
                       className={`card-img-top m-3 DP`}
                       alt="..."
+                      effect="blur"
+                      placeholdersrc={require("../../assets/Dp (2).jpg")}
                     />
                   </span>
-                  <img
+                  <LazyLoadImage
                     src={require("../../assets/Dp (2).jpg")}
                     className={`card-img-top m-3 DP`}
                     alt="..."
+                    effect="blur"
+                    placeholdersrc={require("../../assets/Dp (2).jpg")}
                   />
                 </div>
                 <div
@@ -43,7 +61,7 @@ const ProfileCard = () => {
                   style={{ cursor: "default" }}
                 >
                   <h2
-                    className="card-title margin mt-3"
+                    className="card-title margin mt-2"
                     style={{ cursor: "default" }}
                   >
                     Sarthak Vadgama
@@ -60,6 +78,9 @@ const ProfileCard = () => {
                     real-world problems. I enjoy learning new skills and
                     exploring new challenges in web development.
                   </p>
+                  <a className="btn btn-primary" href={Pdf} download>
+                    Download my Resume
+                  </a>
                 </div>
               </div>
             </div>
