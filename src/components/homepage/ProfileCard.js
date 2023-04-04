@@ -18,7 +18,7 @@ function Tilt(props) {
 
 const ProfileCard = () => {
   const defaultOptions = {
-    max: 6,
+    max: 10,
     scale: 1,
     speed: 1000,
   };
