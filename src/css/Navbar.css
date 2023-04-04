@@ -1,0 +1,154 @@
+.navbar97 {
+  background: none !important;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.navbarBG {
+  background: #ffffff1c !important;
+  border-radius: 20px;
+  max-width: 312px !important;
+  align-self: center;
+  color: white !important;
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  border: #ffffff solid 1px;
+}
+
+.active1 {
+  background-image: linear-gradient(
+    to top right,
+    rgb(167, 218, 255),
+    rgb(248, 187, 255)
+  );
+  height: 30px;
+  position: fixed;
+  filter: blur(3px);
+  backdrop-filter: blur(15px);
+  top: 5px;
+  transform: translateX(-7px);
+  border-radius: 20px;
+  width: 4.6rem;
+  z-index: -7;
+  transition: filter 0.4s;
+}
+
+.active2 {
+  background-image: linear-gradient(
+    to top right,
+    rgb(167, 218, 255),
+    rgb(248, 187, 255)
+  );
+  height: 30px;
+  position: fixed;
+  filter: blur(3px);
+  backdrop-filter: blur(15px);
+  top: 5px;
+  transform: translateX(-7px);
+  border-radius: 20px;
+  width: 4.7rem;
+  z-index: -7;
+  transition: filter 0.4s;
+}
+
+.active3 {
+  background-image: linear-gradient(
+    to top right,
+    rgb(167, 218, 255),
+    rgb(248, 187, 255)
+  );
+  height: 30px;
+  position: fixed;
+  filter: blur(3px);
+  top: 5px;
+  transform: translateX(-7px);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  width: 5.3rem;
+  z-index: -7;
+  transition: filter 0.4s;
+}
+
+.actColor {
+  z-index: 1;
+  color: black !important;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background: none !important;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+
+  .navbarBG {
+    background: #ffffff1c !important;
+    border-radius: 20px;
+    max-width: auto !important;
+    align-self: center;
+    color: white !important;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    border: #ffffff solid 1px;
+  }
+
+  .active1 {
+    background-image: linear-gradient(
+      to top right,
+      rgb(167, 218, 255),
+      rgb(248, 187, 255)
+    );
+    height: 30px;
+    position: fixed;
+    filter: blur(3px);
+    backdrop-filter: blur(15px);
+    top: 5px;
+    transform: translateX(-15px);
+    border-radius: 20px;
+    width: 4.6rem;
+    z-index: -7;
+    transition: filter 0.4s;
+  }
+
+  .active2 {
+    background-image: linear-gradient(
+      to top right,
+      rgb(167, 218, 255),
+      rgb(248, 187, 255)
+    );
+    height: 30px;
+    position: fixed;
+    filter: blur(3px);
+    backdrop-filter: blur(15px);
+    top: 5px;
+    transform: translateX(-15px);
+    border-radius: 20px;
+    width: 4.7rem;
+    z-index: -7;
+    transition: filter 0.4s;
+  }
+
+  .active3 {
+    background-image: linear-gradient(
+      to top right,
+      rgb(167, 218, 255),
+      rgb(248, 187, 255)
+    );
+    height: 30px;
+    position: fixed;
+    filter: blur(3px);
+    top: 5px;
+    transform: translateX(-13px);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    width: 5.3rem;
+    z-index: -7;
+    transition: filter 0.4s;
+  }
+}

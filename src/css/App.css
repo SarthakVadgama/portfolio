@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: white;
+  background: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blurBG {
+  /* background: blanchedalmond !important; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.shape {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  width: 50vh;
+  height: 50vh;
+  background: #0073ff;
+  border-radius: 50%;
+  opacity: 0.13;
+  filter: blur(100px);
+}
+.shape2 {
+  position: absolute;
+  top: -7%;
+  left: -5%;
+  width: 30vw;
+  height: 30vw;
+  background: #9900ff;
+  opacity: 0.18;
+  border-radius: 50%;
+  filter: blur(150px);
+}
+.shape3 {
+  position: absolute;
+  top: -40%;
+  left: 80%;
+  width: 30vw;
+  height: 30vw;
+  background: #67ff02;
+  opacity: 0.15;
+  border-radius: 50%;
+  filter: blur(150px);
+}
+
+@media (max-width: 768px) {
+  * {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .blurBG {
+    /* background: blanchedalmond !important; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .shape {
+    position: absolute;
+    top: 50%;
+    left: -45%;
+    width: 50vh;
+    height: 50vh;
+    background: #0073ff;
+    border-radius: 50%;
+    opacity: 0.13;
+    filter: blur(100px);
+  }
+  .shape2 {
+    position: absolute;
+    top: -7%;
+    left: -5%;
+    width: 60vw;
+    height: 60vw;
+    background: #9900ff;
+    opacity: 0.18;
+    border-radius: 50%;
+    filter: blur(150px);
+  }
+  .shape3 {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 30vh;
+    height: 30vh;
+    background: #67ff02;
+    opacity: 0.17;
+    border-radius: 50%;
+    filter: blur(150px);
+  }
+}

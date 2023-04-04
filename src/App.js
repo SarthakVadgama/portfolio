@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/NavBar";
+import React, { useEffect } from "react";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./css/App.css";
+import "./css/Navbar.css";
+import "./css/Footer.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
+  useEffect(() => {
+    document.title = "Sarthak Vadgama | Home";
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route exact path="/portfolio/" element={<Home />} />
+          <Route exact path="/portfolio/about" element={<About />} />
+          <Route exact path="/portfolio/contact" element={<Contact />} />
+        </Routes>
+        <div className="blurBG">
+          <span className="shape"></span>
+          <span className="shape2"></span>
+          <span className="shape3"></span>
+        </div>
+        <Footer />
+      </Router>
+    </>
   );
 }
 

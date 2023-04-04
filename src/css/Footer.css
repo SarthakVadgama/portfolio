@@ -1,0 +1,27 @@
+.footer {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  position: absolute;
+  left: 0;
+  /* bottom: 0; */
+}
+
+.ending {
+  background: #ffffff15;
+  height: 70px;
+  width: 100.1%;
+  padding: 25px !important;
+  position: relative;
+  margin: 0 !important;
+  backdrop-filter: blur(120px);
+  left: -2px;
+  bottom: -2px;
+}
+
+.dis-in:disabled {
+  background: #430000 !important;
+  color: #ffffff66 !important;
+  border-color: #a4224d;
+  border-right: none;
+}

@@ -1,0 +1,147 @@
+.Projs {
+  --borderWidth: 2px;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+
+.Projs:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: calc(1 * var(--borderWidth));
+  height: 4px;
+  width: 100px;
+  filter: blur(3px);
+  background: linear-gradient(60deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 10s ease-in-out alternate infinite;
+  background-size: 400% 400%;
+}
+
+.Projs:after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: calc(1 * var(--borderWidth));
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(60deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 10s ease-in-out alternate infinite;
+  background-size: 400% 400%;
+}
+
+.Skills {
+  --borderWidth: 2px;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+
+.Skills:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: calc(1 * var(--borderWidth));
+  height: 4px;
+  width: 100px;
+  filter: blur(3px);
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 10s ease-in-out alternate infinite;
+  animation-delay: -6s;
+  background-size: 400% 400%;
+}
+
+.Skills:after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: calc(1 * var(--borderWidth));
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 10s ease-in-out alternate infinite;
+  animation-delay: -6s;
+  background-size: 400% 400%;
+}
+
+.Edu {
+  --borderWidth: 2px;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+
+.Edu:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: calc(1 * var(--borderWidth));
+  height: 4px;
+  width: 100px;
+  filter: blur(3px);
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 10s ease-in-out alternate infinite;
+  animation-delay: -3s;
+  background-size: 400% 400%;
+}
+
+.Edu:after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: calc(1 * var(--borderWidth));
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 10s ease-in-out alternate infinite;
+  animation-delay: -3s;
+  background-size: 400% 400%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.badgeSkills {
+  width: auto;
+  height: auto;
+  padding: 6px 8px;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  background: #05c5ff1f;
+  border: #03a9f4 1px solid;
+}
+
+.nogutters {
+  margin-left: 0;
+}
+
+@media (max-width: 768px) {
+  .badgeSkills {
+    width: auto;
+    height: auto;
+    padding: 6px 8px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    background: #05c5ff1f;
+    border: #03a9f4 1px solid;
+    font-size: 18px !important;
+  }
+}
