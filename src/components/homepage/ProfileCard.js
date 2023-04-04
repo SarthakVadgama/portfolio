@@ -78,7 +78,7 @@ const ProfileCard = () => {
                     real-world problems. I enjoy learning new skills and
                     exploring new challenges in web development.
                   </p>
-                  <a className="btn btn-primary" href={Pdf} download>
+                  <a className="btn btn-light" href={Pdf} download>
                     Download my Resume
                   </a>
                 </div>
