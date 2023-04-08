@@ -169,26 +169,26 @@ const MainCont = () => {
               className="container text-start mt-5"
               style={{ borderLeft: "white 2px solid" }}
             >
-              <span className={`badge badgeSkills fs-6 m-2`}>CSS3</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>HTML5</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>JavaScript</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>NodeJS</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>ReactJS</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>PHP(Basic)</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>MongoDB</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>Express</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>MERN</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>Python</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>NextJS</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>VueJs</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>Adobe XD</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>Figma</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>Photoshop</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>Illustrator</span>
-              <span className={`badge badgeSkills fs-6 m-2`}>
-                After Effects
-              </span>
-              <span className={`badge badgeSkills fs-6 m-2`}>3d-modelling</span>
+              <ul>
+                <li className={`badge badgeSkills fs-6 m-2`}>CSS3</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>HTML5</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>JavaScript</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>NodeJS</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>ReactJS</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>PHP(Basic)</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>MongoDB</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>Express</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>MERN</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>Python</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>NextJS</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>VueJs</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>Adobe XD</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>Figma</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>Photoshop</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>Illustrator</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>After Effects</li>
+                <li className={`badge badgeSkills fs-6 m-2`}>3d-modelling</li>
+              </ul>
             </div>
             <br />
             <h2>
