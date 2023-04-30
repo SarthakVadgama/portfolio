@@ -34,8 +34,8 @@
 }
 
 .DPbg {
-  height: 35vh;
-  width: 35vh;
+  height: auto;
+  width: 20vw;
   margin: 0;
   border-radius: 5%;
   /* background: #4a2eff !important; */
@@ -87,5 +87,22 @@
   }
   .nogutters {
     margin-left: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .DP {
+    min-height: 35vh;
+    max-height: 35vh;
+    width: auto;
+    border-radius: 5%;
+    background: #ff770881 !important;
+    z-index: 7;
+    filter: saturate(0%);
+    border: #ffffff solid 1px;
+    transition: filter 0.5s;
+  }
+  .card-body {
+    margin-left: 5rem;
   }
 }

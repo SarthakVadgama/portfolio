@@ -38,7 +38,7 @@ const ProfileCard = () => {
           >
             <div className={`card cardBlur`} style={{ width: "100%" }}>
               <div className={`row nogutters`}>
-                <div className="col col-md-4">
+                <div className="col col-sm-4">
                   <span className={`DPbg`}>
                     <LazyLoadImage
                       src={require("../../assets/Dp (2).jpg")}
@@ -57,7 +57,7 @@ const ProfileCard = () => {
                   />
                 </div>
                 <div
-                  className="col col-md-6 card-body"
+                  className="col col-sm-6 card-body"
                   style={{ cursor: "default" }}
                 >
                   <h2
